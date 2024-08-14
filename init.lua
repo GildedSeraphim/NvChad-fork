@@ -37,3 +37,19 @@ require "nvchad.autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+
+
+
+
+-- +++++++++++++++++++++ fold confg +++++++++++++++++++++++++
+
+
+-- Set the color for folded text
+vim.api.nvim_set_hl(0, 'Folded', { fg = '#F38BA8', bg = '#363545' })
+
+vim.opt.foldtext = ""
+-- Set foldmethod to expr
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"  -- If using Tree-sitter
+vim.opt.foldlevel = 99
+
