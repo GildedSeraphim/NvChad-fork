@@ -4,6 +4,7 @@ local options = {
         c_cpp = { "clang-format" }, -- Hack to force download.
         c = { "clang_format" },
         cpp = { "clang_format" },
+        nix = { "alejandra" }
     },
 
     formatters = {
